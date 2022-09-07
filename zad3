@@ -1,0 +1,24 @@
+#Напишите программу, которая по заданному номеру четверти, показывает диапазон возможных координат точек в этой четверти (x и y).
+
+while True:
+    number = int(input("Задайте номер четверти от 1 до 4: "))
+    prov = True
+    for i in 1, 2, 3, 4:
+        if i == number:
+            prov = True
+            break
+        else:
+            prov = False
+    if prov == False:
+        print('Неверный ввод')
+    else:
+        break
+
+if number == 1:
+    print("x > 0  и y > 0")
+if number == 2:
+    print("x < 0  и y > 0")
+if number == 3:
+    print("x < 0  и y < 0")
+if number == 4:
+    print("x > 0  и y < 0")
